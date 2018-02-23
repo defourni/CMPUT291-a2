@@ -1,0 +1,110 @@
+Script started on Thu 22 Feb 2018 09:24:25 PM MST
+defourni@ug04:~/CMPUT291/Assign2/CMPUT291-a2>sqlite
+Loading resources from /cshome/defourni/.sqliterc
+SQLite version 2.8.17
+Enter ".help" for instructions
+sqlite> .headers on
+sqlite> .read a2-tables.sql
+DROP TABLE IF EXISTS trucks;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS maintenance_records;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS containers;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS waste_types;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS container_waste_types;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS personnel;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS account_managers;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS drivers;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS accounts;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS service_agreements;
+SQL error: near "EXISTS": syntax error
+DROP TABLE IF EXISTS service_fulfillments;
+SQL error: near "EXISTS": syntax error
+sqlite> .read a2-sql[K[K[Kdata.sql
+sqlite> .read a2-queries.sql
+unknown command or invalid arguments:  "print". Enter ".help" for help
+S.local_contact
+(904) 694-9532
+(583) 636-4313
+(209) 164-7895
+unknown command or invalid arguments:  "print". Enter ".help" for help
+A.customer_name|A.contact_info|P.name
+Areli Lowery|(706) 692-2734|Carina Herrera
+Julie Herrera|(359) 306-2012|Dan Brown
+Mollie Ray|(940) 530-6245|Rishi Fuentes
+Itzel Guerrero|(287) 679-5399|Braden Odonnell
+unknown command or invalid arguments:  "print". Enter ".help" for help
+a.customer_name
+Tomas Young
+Brodie Hobbs
+Reese Thornton
+Sidney Preston
+unknown command or invalid arguments:  "print". Enter ".help" for help
+Account Type|Number of Services|Profit
+medium accounts manager|25|40955.69
+major accounts manager|28|46482.41
+small accounts manager|32|53599.06
+unknown command or invalid arguments:  "print". Enter ".help" for help
+P.name
+Trevor Stafford
+unknown command or invalid arguments:  "print". Enter ".help" for help
+C.container_id
+4CDR5B
+2G1FP3
+unknown command or invalid arguments:  "print". Enter ".help" for help
+C.container_id
+1FAFP5
+1FTNX2
+1G4AL7
+1GCEK1
+1GCESB
+1GDZ7U
+1GKDT1
+1GT5K0
+1GTCT1
+2FWBA2
+2GTHK3
+2J4FY2
+3B6WF3
+3C3ES4
+3D7KS2
+3GTP1T
+4S2CG5
+4S3BH6
+4S4BRE
+JF1AX4
+JH2SC6
+JH4KB2
+JHLRE3
+JS1GV7
+JTDBT9
+JTJBM7
+KL7TN5
+WA1VGA
+WBAAM5
+WBAFR1
+WDDHF2
+unknown command or invalid arguments:  "print". Enter ".help" for help
+driver_id
+12345
+23769
+77131
+88569
+unknown command or invalid arguments:  "print". Enter ".help" for help
+unknown command or invalid arguments:  "print". Enter ".help" for help
+Truck Type|MAX|MIN|AVG
+front loader|6|1|3.4
+roll-off|7|1|3.64285714285714
+garbage bin collector|4|1|2.26086956521739
+sqlite> .quit
+defourni@ug04:~/CMPUT291/Assign2/CMPUT291-a2>exit
+exit
+
+Script done on Thu 22 Feb 2018 09:25:21 PM MST
